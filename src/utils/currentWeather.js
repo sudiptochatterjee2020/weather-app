@@ -1,7 +1,7 @@
 const request = require('request');
 
 const currentWeather = (latitude, longitude, callback) => {
-    const weatherToken = 'de24adcaca6598f2e81146e00d19bf45';
+    const weatherToken = 'd8b5c2e40ce3457d9db35a1387c54af9';
     const weatherUrl = 'http://api.weatherstack.com/current?access_key=' + weatherToken + '&query=' + latitude + '%20' + longitude;
 
     // json: true parses the response value into a JSON string
