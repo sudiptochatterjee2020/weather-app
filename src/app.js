@@ -11,11 +11,11 @@ const app = express();
 const port = process.env.PORT || 3000; 
 
 // Define paths for Express config
-const staticPath = "D:/Workspace/01_NodeJS_Tutorial/web-server/public";
-const imgPath = "D:/Workspace/01_NodeJS_Tutorial/web-server/public/img";
+const staticPath = path.join(__dirname, "../public");
+const imgPath = path.join(__dirname, "../public/img");
 // path to the handlebar views and partials
-const viewsPath = "D:/Workspace/01_NodeJS_Tutorial/web-server/templates/views"
-const partialsPath = "D:/Workspace/01_NodeJS_Tutorial/web-server/templates/partials"
+const viewsPath = path.join(__dirname, "../templates/views");
+const partialsPath = path.join(__dirname, "../templates/partials");
 
 // Set the handlebars engine to be used by express. 
 app.set('view engine', 'hbs');   // hbs is the templating engine
