@@ -1,4 +1,4 @@
-const weatherUrl = 'http://localhost:3000/weather?address='
+const weatherUrl = '/weather?address='
 const weatherForm = document.querySelector('form');
 const msgone = document.querySelector('#message-1');
 const msgtwo = document.querySelector('#message-2')

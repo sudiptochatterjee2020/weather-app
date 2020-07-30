@@ -7,6 +7,8 @@ const geocode = require('./utils/geocode');
 const currentWeather = require('./utils/currentWeather');
 
 const app = express();
+// port for heroku or localhost
+const port = process.env.PORT || 3000; 
 
 // Define paths for Express config
 const staticPath = "D:/Workspace/01_NodeJS_Tutorial/web-server/public";
@@ -103,6 +105,6 @@ app.get('*', (req, res) => {
 })
 
 // start the server on port 3000
-app.listen(3000, () => {
-    console.log('Server is up on port 3000!')
+app.listen(port, () => {
+    console.log('Server is up on ' + port)
 })
