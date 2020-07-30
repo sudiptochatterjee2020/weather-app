@@ -1,7 +1,9 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-//const request = require('request');
+
+// for environment variables
+require('dotenv').config();
 
 const geocode = require('./utils/geocode');
 const currentWeather = require('./utils/currentWeather');
